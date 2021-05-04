@@ -250,23 +250,23 @@
 				<!-- AR Swift -->
 				<div class="row">
 					<div class="portfolio-thumb">
-						<img src="img/portfolio/ar.png">
+						<a class="image-popup-no-margins" href="img/portfolio/ar.png"><img src="img/portfolio/ar.png"></a>
 						<p class="description"><b>AR Teeth <br/></b><u>Swift developer and Project Manager</u> on building an Augmented Reality APP for aesthetic dentistry. This project will be deployed to dentist clinic to bridge the gap between the aesthetic perception of dentists and clients via displaying the real-time visual effect. <br/><i>Expected to be released on Sep 2021</i><br/><span class="skill">Swift</span><span class="skill">AR Kit</span><span class="skill">Figma</span>
 						</p>
 					</div>
 					<div class="portfolio-thumb">
-						<img src="img/portfolio/sigma.png">
+						<a class="image-popup-no-margins" href="img/portfolio/sigma.png"><img src="img/portfolio/sigma.png"></a>
 						<p class="description"><b>SIGMA <br/>Gamified Financial Education & Risk Assessment App</b><br/>Sigma is an award-winning mobile application in matching ready millennial clients with investment vehicles that best suit their risk preferences, predominantly focuses on gamification of client onboarding and financial intelligence & sentiment analysis. Worked as a <u>Machine Learning Engineer </u> in the team. <br/><i><a target="_blank" href="https://drive.google.com/file/d/1zZ2CqXHYFCIp7dhx5uegzIoS6r-bNLWG/view?usp=sharing">Presentation Deck</a></i><br/><span class="skill">Netify</span></p>
 					</div>
 				</div>						
 				<div class="row">
 					<div class="portfolio-thumb">
-						<img src="img/portfolio/haa500.png">
+						<a class="image-popup-no-margins" href="img/portfolio/haa500.png"><img src="img/portfolio/haa500.png"></a>
 						<p class="description"><b>HAA500 (HKUST)<br/>Human-Centric Atomic Action Dataset with Curated Videos </b><br/>As an <u>undergraduate researcher</u> supervied by <a target="_blank" href="https://scholar.google.com/citations?user=EWfpM74AAAAJ&hl=zh-TW">Prof. Chi-Keung Tang </a> and <a target="_blank" href="https://scholar.google.com/citations?user=nFhLmFkAAAAJ&hl=zh-TW">Dr. Yu-Wing Tai </a>, working on building a human-centric atomic action dataset including 500 fine-grained and hierarchical classes with JavaScript to mitigate issues of coarse class, noisy content and human occlusion for improving performance of action recognition in videos. <br/><i><a target="_blank" href="https://arxiv.org/abs/2009.05224">Paper </a> | <a target="_blank" href="https://www.cse.ust.hk/haa/">Dataset</a></i><br/><span class="skill">Action Recognition</span><span class="skill">Atomic Action</span>
 						</p>
 					</div>
 					<div class="portfolio-thumb">
-						<img src="img/portfolio/corner.png">
+						<a class="image-popup-no-margins" href="img/portfolio/corner.png"><img src="img/portfolio/corner.png"></a>
 						<p class="description"><b>Anchor-free Object Detection (Princeton)</b><br/>As an <u>undergraduate researcher</u> supervied by <a target="_blank" href="https://scholar.google.com/citations?user=U3Eub-EAAAAJ&hl=zh-TW">Prof. Jia Deng</a> on establishing training and evaluation pipeline of CornerNet on Open Images dataset with PyTorch from scratch and applied data rebalancing and multi-stages zoom-in to handle data imbalance, crowded scenes, and non-exhaustive data labeling. Achieved best anchor-free detectors (mAP: 58.1%) in 2019 Open Images Challenge-Object Detection (ICCV)
 						<br/><span class="skill">CornerNet</span><span class="skill">Open Images</span><span class="skill">One-stage Detector</span>
 						</p>
@@ -274,12 +274,12 @@
 				</div>
 				<div class="row">
 					<div class="portfolio-thumb">
-						<img src="img/portfolio/pev.png">
+						<a class="image-popup-no-margins" href="img/portfolio/pev.png"><img src="img/portfolio/pev.png"></a>
 						<p class="description"><b>Automobiles and Electric Vehicle (Harvard)</b><br/>As an <u>undergraduate researcher</u> supervied by <a target="_blank" href="https://en.wikipedia.org/wiki/Evelyn_Hu">Prof. Evelyn Hu</a>, working on designing a simple electric circuit system and a car avoidance function using C++ for personal electric vehicles. <br/><i><a target="_blank" href="https://www.seas.harvard.edu/news/2017/08/driving-toward-cross-cultural-collaboration">Press </a></i><br/><span class="skill">PEV</span><span class="skill">Fusion 360</span>
 						</p>
 					</div>
 					<div class="portfolio-thumb">
-						<img src="img/portfolio/rov.png">
+						<a class="image-popup-no-margins" href="img/portfolio/rov.png"><img src="img/portfolio/rov.png"></a>
 						<p class="description"><b>Underwater Remote Operating Vehicles (HKUST) </b><br/>Worked as an <u>software developer</u> on implementing communication program via ROS and dashboard via QT creator with C++ for remote control for robots .
 						<br/><i><a target="_blank" href="https://www.rs-online.com/designspark/hkust-team-bags-championship-in-11th-hk-asia-iet-mate-underwater-robot-challenge">Press </a> | <a target="_blank" href="https://youtu.be/O5F7kZcGwAI">Video</a></i><br/><span class="skill">ROS</span><span class="skill">QT</span><span class="skill">CAN BUS</span>
 						</p>
@@ -337,17 +337,17 @@
 		        });
 		      });
 		</script>
-
 		<script>
-		  var _gaq = _gaq || [];
-		  _gaq.push(['_setAccount', 'UA-1965499-1']);
-		  _gaq.push(['_trackPageview']);
-
-		  (function() {
-		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		  })();
+		// call the plugin on the "#toc" element
+		$('#toc').fixedTOC({
+			menuOpens: 'click', // or 'mouseenter'
+			scrollSpeed: 1000,
+			menuSpeed: 300,
+			useSubMenus: false,
+			resetSubMenus: false,
+			topLinkWorks: true
+		});
 		</script>
+
 	</body>
 </html>
